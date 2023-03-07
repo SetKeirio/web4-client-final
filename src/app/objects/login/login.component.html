@@ -1,0 +1,22 @@
+<hat-page></hat-page>
+<p class="start-header">Login</p>
+<form [formGroup]="userForm" class="start-form">
+  <div class="form-data">
+  <div>
+    <label for="login">Login</label>
+    <input class="form-control" id="login" type="text" formControlName="login">
+  </div>
+  <div>
+    <label for="password">Password</label>
+    <input class="form-control" id="password" type="password" formControlName="password">
+  </div>
+    <p class="validate-text" id="login-status" *ngIf="!userForm.controls.login.valid">Username должен содержать хотя бы 6 символов!</p>
+    <p class="validate-text" id="password-status" *ngIf="!userForm.controls.password.valid">Password должен содержать хотя бы 6 символов!</p>
+  <div>
+    <button class="login-button" (click)="onLogin()" [disabled]="!userForm.valid" *ngIf="userForm.valid">Login</button>
+  </div>
+    <div>
+      <button class="login-button" [disabled]="!userForm.valid" *ngIf="userForm.valid">Register</button>
+    </div>
+  </div>
+</form>

@@ -1,0 +1,28 @@
+.canvas{
+  margin-bottom: 0.5%;
+  align-content: center;
+}
+.main-graph-part {
+  vertical-align: top;
+  background-color: #3f51b547;
+  margin-bottom: 1%;
+  padding-bottom: 0.5%;
+}
+.main-header{
+  width: 100%;
+  color:beige;
+  background-color: #3F51B5;
+  text-align: center;
+  margin-top: 1.0%;
+  padding-top: 0.2%;
+  padding-bottom: 0.2%;
+  font-size: 22px;
+}
+.graph-part, .canvas{
+  margin-top: 1.0%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+
+}

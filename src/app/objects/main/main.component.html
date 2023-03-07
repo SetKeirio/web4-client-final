@@ -1,0 +1,145 @@
+<hat-page></hat-page>
+<section class="main-graph-part">
+  <h2 class="main-header">
+    <span class="main-header-text">
+      График
+    </span>
+  </h2>
+  <div class="graph-part">
+    <canvas class="canvas" width="352" height="352" (click)="canvasAdd($event)" #graph1>Интерактивная область графика</canvas>
+
+  </div>
+</section>
+
+<section class="main-data-part">
+  <h2 class="main-header">
+              <span class="main-header-text">
+                Данные
+              </span>
+  </h2>
+  <form class="main-form" (ngSubmit)="addPoint()" [formGroup]="dataForm">
+    <p class="form-text">Введите координаты точки</p>
+    <p class="validate-text" id="r-status" *ngIf="!dataForm.controls.validateR.valid">Проверьте правильность переменной X!</p>
+    <p class="validate-text" id="y-status" *ngIf="!dataForm.controls.validateY.valid">Проверьте правильность переменной Y!</p>
+    <p class="validate-text" id="x-status" *ngIf="!dataForm.controls.validateX.valid">Проверьте правильность переменной R!</p>
+
+    <div class="main-form-variable-part" id="x-group">
+      <label class="form-variable-name" for="x-select">X</label>
+      <label class="checkbox-label">
+        <input type="radio" id="x-button1" formControlName="validateX" value="-4">
+        -4
+      </label>
+      <label class="checkbox-label">
+        <input type="radio" id="x-button2" formControlName="validateX" value="-3">
+        -3
+      </label>
+      <label class="checkbox-label">
+        <input type="radio" id="x-button3" formControlName="validateX" value="-2">
+        -2
+      </label>
+      <label class="checkbox-label">
+        <input type="radio" id="x-button4" formControlName="validateX" value="-1">
+        -1
+      </label>
+      <label class="checkbox-label">
+        <input type="radio" id="x-button5" formControlName="validateX"value="0">
+        0
+      </label>
+      <label class="checkbox-label">
+        <input type="radio" id="x-button6" formControlName="validateX" value="1">
+        1
+      </label>
+      <label class="checkbox-label">
+        <input type="radio" id="x-button7" formControlName="validateX" value="2">
+        2
+      </label>
+      <label class="checkbox-label">
+        <input type="radio" id="x-button8" formControlName="validateX" value="3">
+        3
+      </label>
+      <label class="checkbox-label">
+        <input type="radio" id="x-button9" formControlName="validateX" value="4">
+        4
+      </label>
+      <label></label>
+
+    </div>
+
+    <div class="main-form-variable-part">
+      <label class="form-variable-name" for="text-y">Y</label>
+      <input class="form-variable-text" id="text-y" type="text" formControlName="validateY" placeholder="Введите Y от -5 до 5" (input)="yValidate()">
+    </div>
+
+    <div class="main-form-variable-part">
+      <label class="form-variable-name" for="r-select">R</label>
+      <label class="checkbox-label">
+        <input type="radio" id="r-button1" formControlName="validateR" value="-4" (click)="negativeRadius()">
+        -4
+      </label>
+      <label class="checkbox-label">
+        <input type="radio" id="r-button2" formControlName="validateR" value="-3" (click)="negativeRadius()">
+        -3
+      </label>
+      <label class="checkbox-label">
+        <input type="radio" id="r-button3" formControlName="validateR" value="-2" (click)="negativeRadius()">
+        -2
+      </label>
+      <label class="checkbox-label">
+        <input type="radio" id="r-button4" formControlName="validateR" value="-1"  (click)="negativeRadius()">
+        -1
+      </label>
+      <label class="checkbox-label">
+        <input type="radio" id="r-button5" formControlName="validateR" value="0" (click)="nullRadius()">
+        0
+      </label>
+      <label class="checkbox-label">
+        <input type="radio" id="r-button6" formControlName="validateR" value="1" (click)="positiveRadius()">
+        1
+      </label>
+      <label class="checkbox-label">
+        <input type="radio" id="r-button7" formControlName="validateR" value="2" (click)="positiveRadius()">
+        2
+      </label>
+      <label class="checkbox-label">
+        <input type="radio" id="r-button8" formControlName="validateR" value="3" (click)="positiveRadius()">
+        3
+      </label>
+      <label class="checkbox-label">
+        <input type="radio" id="r-button9" formControlName="validateR" value="4" (click)="positiveRadius()">
+        4
+      </label>
+    </div>
+
+    <input id="hidden_timezone" type="hidden" name="timezone" value="">
+    <input id="hidden_empty" type="hidden" name="empty" value="">
+    <input id="hidden_table" type="hidden" name="table" value="">
+
+    <button class="form-submit-button" *ngIf="dataForm.valid" [disabled]="!dataForm.valid"
+            type="submit">Отправить</button>
+
+  </form>
+</section>
+
+<section class="main-table-part">
+  <h2 class="main-header">
+            <span class="main-header-text">
+              Таблица
+            </span>
+  </h2>
+  <div class="table-container">
+    <table class="main-table" id="result-main-table">
+      <tr class="main-table-header">
+        <th class="table-x-value">X</th>
+        <th class="table-x-value">Y</th>
+        <th class="table-x-value">R</th>
+        <th class="table-x-value">Результат работы</th>
+      </tr>
+      <tr *ngFor="let result of results; let i = index">
+        <td class="table-result">{{result.x}}</td>
+        <td class="table-result">{{result.y}}</td>
+        <td class="table-result">{{result.r}}</td>
+        <td class="table-result">{{result.inarea}}</td>
+      </tr>
+    </table>
+  </div>
+</section>

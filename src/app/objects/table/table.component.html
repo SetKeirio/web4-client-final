@@ -1,0 +1,23 @@
+<section class="main-table-part">
+    <h2 class="main-header">
+            <span class="main-header-text">
+              Таблица
+            </span>
+    </h2>
+    <div class="table-container">
+      <table class="main-table" id="result-main-table">
+        <tr class="main-table-header">
+          <th class="table-x-value">X</th>
+          <th class="table-x-value">Y</th>
+          <th class="table-x-value">R</th>
+          <th class="table-x-value">Результат работы</th>
+        </tr>
+        <tr *ngFor="let result of results; let i = index">
+          <td class="table-result">{{result.x}}</td>
+          <td class="table-result">{{result.y}}</td>
+          <td class="table-result">{{result.r}}</td>
+          <td class="table-result">{{result.inarea}}</td>
+        </tr>
+      </table>
+    </div>
+  </section>

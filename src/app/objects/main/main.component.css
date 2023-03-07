@@ -1,0 +1,208 @@
+body {
+  font-family: monospace, "Georgia";
+  font-size: 16px;
+  background-color:#88aef1;
+}
+
+.main-table-part{
+  vertical-align: top;
+  background-color: #3f51b547;
+}
+
+
+#main{
+  width: 100%;
+  border-spacing: 1em;
+}
+.main-form-variable-part::selection{
+  background-color: silver;
+}
+.form-submit-button:hover {
+  background-color: silver;
+}
+
+.form-variable-slider{
+  margin-top: 0.5%;
+  margin-bottom: 0.3%;
+  margin-left:1.2%;
+  width:9.35%;
+}
+.form-variable-name{
+  text-align: center;
+  margin-left: 0.2%;
+  padding-left: 0.2%;
+  padding-right: 0.2%;
+  color:white;
+  background-color:#3F51B5;
+
+}
+
+.left-labeled{
+  display: inline-block;
+  font-size:22px;
+  position: relative;
+}
+.right-labeled{
+  float:right;
+  font-size:22px;
+}
+
+#hat{
+
+  color:beige;
+  background-color:#3F51B5;
+
+}
+
+.form-submit-button{
+  text-align: center;
+  margin-left: 0.2%;
+  padding-left: 0.2%;
+  padding-right: 0.2%;
+  margin-bottom: 0.2%;
+  margin-top: 0.2%;
+}
+
+.main-header{
+  width: 100%;
+  color:beige;
+  background-color: #3F51B5;
+  text-align: center;
+  padding-top: 0.2%;
+  padding-bottom: 0.2%;
+  font-size: 22px;
+}
+
+.table-result{
+  font-size: 18px;
+  color:beige
+}
+
+#r-status, #y-status, #x-status{
+  color:white;
+  width: 25%;
+  font-size: 16px;
+  margin-left: 0.2%;
+  margin-top: 0.2%;
+  margin-bottom: 0.5%;
+  text-align:center;
+  background-color:red
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.canvas{
+  margin-bottom: 0.5%;
+  align-content: center;
+}
+.main-graph-part {
+  vertical-align: top;
+  background-color: #3f51b547;
+  margin-bottom: 1%;
+  padding-bottom: 0.5%;
+}
+.main-header{
+  width: 100%;
+  color:beige;
+  background-color: #3F51B5;
+  text-align: center;
+  margin-top: 1.0%;
+  padding-top: 0.2%;
+  padding-bottom: 0.2%;
+  font-size: 22px;
+}
+.graph-part, .canvas{
+  margin-top: 1.0%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+
+}
+.main-data-part{
+  vertical-align: top;
+  background-color: #3f51b547;
+}
+
+.main-header{
+  width: 100%;
+  color:beige;
+  background-color: #3F51B5;
+  text-align: center;
+  padding-top: 0.2%;
+  padding-bottom: 0.2%;
+  font-size: 22px;
+}
+
+#r-status, #y-status, #x-status{
+  background-color: red;
+  margin-left: 0.2%;
+  padding-left: 0.2%;
+  color:beige;
+  width: 18%;
+}
+
+.main-form-variable-part::selection{
+  background-color: silver;
+}
+
+.form-submit-button:hover {
+  background-color: silver;
+}
+
+.form-variable-name{
+  text-align: center;
+  margin-left: 0.2%;
+  padding-left: 0.2%;
+  padding-right: 0.2%;
+  margin-right: 0.3%;
+  color:white;
+  background-color:#3F51B5;
+}
+
+.form-submit-button:hover {
+  background-color: silver;
+}
+
+.form-submit-button{
+  text-align: center;
+  margin-left: 0.2%;
+  padding-left: 0.2%;
+  padding-right: 0.2%;
+  margin-bottom: 0.2%;
+  margin-top: 0.2%;
+  background-color: #5F51B5;
+}
+
+.main-form{
+  margin-bottom: 1.0%;
+}
+
+.main-table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.main-table-header{
+  text-align: center;
+  color:white;
+  background-color:#3f51b5bd;
+}
+
+.main-header{
+  width: 100%;
+  color:beige;
+  background-color: #3F51B5;
+  text-align: center;
+  padding-top: 0.2%;
+  padding-bottom: 0.2%;
+  font-size: 22px;
+}
+
+.table-result{
+  background-color: #3f51b547;
+  color: #777777;
+}

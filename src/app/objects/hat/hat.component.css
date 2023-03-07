@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  font-family: monospace, "Georgia";
+  font-size: 16px;
+  background-color:#88aef1;
+}
+
+.main-header {
+  padding: 1em;
+  font-size: 15px;
+  text-align: center;
+}
+
+.left-labeled{
+  display: inline-block;
+  font-size:22px;
+  position: relative;
+}
+.right-labeled{
+  float:right;
+  font-size:22px;
+}
+
+#switch-pages{
+  float:left;
+  padding-right:1.0%;
+}
+
+#hat{
+  padding-left:1.0%;
+  padding-right:1.0%;
+  padding-bottom:0.2%;
+  padding-top:0.2%;
+  color:beige;
+  background-color:#3F51B5;
+}
