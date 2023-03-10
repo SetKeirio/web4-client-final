@@ -73,19 +73,19 @@
     <div class="main-form-variable-part">
       <label class="form-variable-name" for="r-select">R</label>
       <label class="checkbox-label">
-        <input type="radio" id="r-button1" formControlName="validateR" value="-4" (click)="negativeRadius()">
+        <input type="radio" id="r-button1" formControlName="validateR" value="-4" (click)="negativeRadius(-4)">
         -4
       </label>
       <label class="checkbox-label">
-        <input type="radio" id="r-button2" formControlName="validateR" value="-3" (click)="negativeRadius()">
+        <input type="radio" id="r-button2" formControlName="validateR" value="-3" (click)="negativeRadius(-3)">
         -3
       </label>
       <label class="checkbox-label">
-        <input type="radio" id="r-button3" formControlName="validateR" value="-2" (click)="negativeRadius()">
+        <input type="radio" id="r-button3" formControlName="validateR" value="-2" (click)="negativeRadius(-2)">
         -2
       </label>
       <label class="checkbox-label">
-        <input type="radio" id="r-button4" formControlName="validateR" value="-1"  (click)="negativeRadius()">
+        <input type="radio" id="r-button4" formControlName="validateR" value="-1"  (click)="negativeRadius(-1)">
         -1
       </label>
       <label class="checkbox-label">
@@ -93,19 +93,19 @@
         0
       </label>
       <label class="checkbox-label">
-        <input type="radio" id="r-button6" formControlName="validateR" value="1" (click)="positiveRadius()">
+        <input type="radio" id="r-button6" formControlName="validateR" value="1" (click)="positiveRadius(1)">
         1
       </label>
       <label class="checkbox-label">
-        <input type="radio" id="r-button7" formControlName="validateR" value="2" (click)="positiveRadius()">
+        <input type="radio" id="r-button7" formControlName="validateR" value="2" (click)="positiveRadius(2)">
         2
       </label>
       <label class="checkbox-label">
-        <input type="radio" id="r-button8" formControlName="validateR" value="3" (click)="positiveRadius()">
+        <input type="radio" id="r-button8" formControlName="validateR" value="3" (click)="positiveRadius(3)">
         3
       </label>
       <label class="checkbox-label">
-        <input type="radio" id="r-button9" formControlName="validateR" value="4" (click)="positiveRadius()">
+        <input type="radio" id="r-button9" formControlName="validateR" value="4" (click)="positiveRadius(4)">
         4
       </label>
     </div>
@@ -142,4 +142,7 @@
       </tr>
     </table>
   </div>
+  <button class="form-submit-button"
+          type="submit" (click)="logout()">logout</button>
+
 </section>

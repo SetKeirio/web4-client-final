@@ -14,6 +14,7 @@ import {ResultComponent} from "./objects/result/result.component";
 import {ResultsAlgorithms} from "./algorithms/results.algorithms";
 import {HttpClientModule} from "@angular/common/http";
 import {ReactiveFormsModule} from "@angular/forms";
+import {LoginAlgorithm} from "./algorithms/login.algorithm";
 
 @NgModule({
   declarations: [
@@ -34,7 +35,7 @@ import {ReactiveFormsModule} from "@angular/forms";
     ReactiveFormsModule,
     RouterModule
   ],
-  providers: [],
+  providers: [LoginAlgorithm],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

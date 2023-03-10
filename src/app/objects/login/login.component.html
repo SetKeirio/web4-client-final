@@ -16,7 +16,8 @@
     <button class="login-button" (click)="onLogin()" [disabled]="!userForm.valid" *ngIf="userForm.valid">Login</button>
   </div>
     <div>
-      <button class="login-button" [disabled]="!userForm.valid" *ngIf="userForm.valid">Register</button>
+      <button class="login-button" (click)="onRegister()" [disabled]="!userForm.valid" *ngIf="userForm.valid">Register</button>
     </div>
+    <p class="validate-text" id="request-status" *ngIf="err">{{message}}</p>
   </div>
 </form>
